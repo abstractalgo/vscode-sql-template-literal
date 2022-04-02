@@ -1,13 +1,13 @@
 {
-    "name": "vscode-sql-template-literal-2",
-    "displayName": "vscode-sql-template-literal-2",
+    "name": "vscode-sql-template-literal-ts",
+    "displayName": "vscode-sql-template-literal-ts",
     "description": "Syntax highlighting for sql in template literals",
     "version": "0.1.0",
     "publisher": "abstractalgo",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/abstractalgo/vscode-sql-template-literal.git"
+        "url": "https://github.com/abstractalgo/vscode-sql-template-literal-ts.git"
     },
     "engines": {
         "vscode": "^1.5.0"

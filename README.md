@@ -1,4 +1,4 @@
-# vscode-sql-template-literal
+# vscode-sql-template-literal-ts
 
 Syntax highlighting for code like:
 
@@ -6,13 +6,18 @@ Syntax highlighting for code like:
 const query = sql`SELECT * FROM users`;
 ```
 
-## Publishing
+...but also for this:
 
-May require token, stored in last pass. Go to
-https://forbeslindesay.visualstudio.com/_details/security/tokens if token needs
-regenerating.
+```ts
+const query = sql<queries.SelecteOneUser>`SELECT * FROM users`;
+```
+
+### Packaging and installation
+
+From https://code.visualstudio.com/api/working-with-extensions/publishing-extension:
 
 ```
-npm install -g vsce
-vsce publish
+vsce package
 ```
+
+Then "Install from VSIX" in Extensions panel inside VS Code.
